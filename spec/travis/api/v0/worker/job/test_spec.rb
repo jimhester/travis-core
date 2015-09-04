@@ -85,7 +85,7 @@ describe Travis::Api::V0::Worker::Job::Test do
       data['repository'].should == {
         'id' => 1,
         'slug' => 'svenfuchs/minimal',
-        'source_url' => 'git://github.com/svenfuchs/minimal.git',
+        'source_url' => 'https://github.com/svenfuchs/minimal.git',
         'api_url' => 'https://api.github.com/repos/svenfuchs/minimal',
         'last_build_id' => 1,
         'last_build_started_at' => json_format_time(Time.now.utc - 1.minute),
@@ -185,7 +185,7 @@ describe Travis::Api::V0::Worker::Job::Test do
       data['repository'].should == {
         'id' => 1,
         'slug' => 'svenfuchs/minimal',
-        'source_url' => 'git://github.com/svenfuchs/minimal.git',
+        'source_url' => 'https://github.com/svenfuchs/minimal.git',
         'api_url' => 'https://api.github.com/repos/svenfuchs/minimal',
         'last_build_id' => 1,
         'last_build_started_at' => json_format_time(Time.now.utc - 1.minute),

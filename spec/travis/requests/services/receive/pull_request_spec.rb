@@ -98,7 +98,7 @@ describe Travis::Requests::Services::Receive::PullRequest do
     it 'returns all attributes required for a Commit' do
       payload.commit.should == {
         :commit => 'ef34a166e2dd7780d40800890474f836c8b3fc34',
-        :message => "Merge branch 'master' of git://github.com/travis-repos/test-project-1\n\nConflicts:\n\tRakefile\n",
+        :message => "Merge branch 'master' of https://github.com/travis-repos/test-project-1\n\nConflicts:\n\tRakefile\n",
         :branch => 'master',
         :ref => 'refs/pull/1/merge',
         :committed_at => '2012-04-16T13:30:33Z',

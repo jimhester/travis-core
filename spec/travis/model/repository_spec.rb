@@ -202,7 +202,7 @@ describe Repository do
 
       it 'returns the public git source url for a public repository' do
         repo.private = false
-        repo.source_url.should == 'git://github.com/travis-ci/travis-ci.git'
+        repo.source_url.should == 'https://github.com/travis-ci/travis-ci.git'
       end
 
       it 'returns the private git source url for a private repository' do

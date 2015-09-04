@@ -115,7 +115,7 @@ class Repository < Travis::Model
   end
 
   def source_url
-    (private? || private_mode?) ? "git@#{source_host}:#{slug}.git": "git://#{source_host}/#{slug}.git"
+    (private? || private_mode?) ? "git@#{source_host}:#{slug}.git": "https://#{source_host}/#{slug}.git"
   end
 
   def private_mode?

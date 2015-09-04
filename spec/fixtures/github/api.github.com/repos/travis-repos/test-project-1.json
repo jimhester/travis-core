@@ -34,7 +34,7 @@
   "name": "test-project-1",
   "forks": 6,
   "ssh_url": "git@github.com:travis-repos/test-project-1.git",
-  "git_url": "git://github.com/travis-repos/test-project-1.git",
+  "git_url": "https://github.com/travis-repos/test-project-1.git",
   "id": 1615549,
   "language": "Ruby"
 }

@@ -1,5 +1,5 @@
 {
-  "message": "Merge branch 'master' of git://github.com/travis-repos/test-project-1\n\nConflicts:\n\tRakefile\n",
+  "message": "Merge branch 'master' of https://github.com/travis-repos/test-project-1\n\nConflicts:\n\tRakefile\n",
   "url": "https://api.github.com/repos/travis-repos/test-project-1/git/commits/5442e1772f6de100a2451bd1e08824d3be37a46f",
   "committer": {
     "email": "konstantin.mailinglists@googlemail.com",
