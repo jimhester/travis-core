@@ -21,6 +21,7 @@ module Travis
         end
 
         def channels
+          Travis.logger.info({channels: @channels}.inspect)
           @channels ||= config.notification_values(:irc, :channels)
         end
 
