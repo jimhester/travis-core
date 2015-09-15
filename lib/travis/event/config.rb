@@ -96,7 +96,7 @@ module Travis
       end
 
       def notifications
-        Travis::SecureConfig.decrypt(config.fetch(:notifications, {}), secure_key).tap {|x| Travis.logger.info({class: self.class, notifications: x}.inspect)}
+        Travis::SecureConfig.decrypt(config.fetch(:notifications, {}), secure_key).tap {|x| Travis.logger.info({class: self.class, notifications: x}.inspect)}.tap {|x| Travis.logger.info({decrypted: x}.inspect)}
       end
 
       def normalize_array(values)
