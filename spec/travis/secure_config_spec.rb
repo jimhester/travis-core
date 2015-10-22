@@ -67,7 +67,10 @@ describe Travis::SecureConfig do
         email: false,
         campfire: {
           secure: crypted
-        }
+        },
+      },
+      irc: {
+        nick: crypted
       },
       '.configured' => true
     }
@@ -83,6 +86,9 @@ describe Travis::SecureConfig do
       notifications: {
         email: false,
         campfire: 'hello world'
+      },
+      irc: {
+        nick: 'hello world'
       },
       '.configured' => true
     }

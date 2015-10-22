@@ -22,7 +22,7 @@ module Travis
         key, element = element if result.is_a?(Hash)
         value = process(result, key, decrypt_element(key, element))
         block_given? ? yield(value) : value
-      end
+      end.tap { |val| Travis.logger.info "Decrypt: received #{config}; decrypted #{val}" }
     end
 
     def encrypt(config)
